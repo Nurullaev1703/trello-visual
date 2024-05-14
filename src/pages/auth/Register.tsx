@@ -4,7 +4,7 @@ import { Controller, useForm } from "react-hook-form"
 import { TextField } from "@mui/material"
 import { requiredEmailValidationRule, requiredValidateMinLength } from "../../components/input-validate"
 import { Button } from "../../shared/ui/Button"
-import { apiService } from "../../services/ApiService"
+import { apiService } from "../../services/api/ApiService"
 import { useNavigate } from "@tanstack/react-router"
 
 interface FormType{
@@ -35,7 +35,7 @@ export const Register:FC = function Register(){
     })
     return <AuthForm onSubmit={handleSubmit(async (form) => {
         const response = await apiService.post<string>({
-            url:"/auth/signup",
+            url:"/auth/register",
             dto:form
         })
         if(response.data){

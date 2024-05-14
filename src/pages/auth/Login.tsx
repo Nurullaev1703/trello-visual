@@ -5,7 +5,7 @@ import { TextField } from "@mui/material"
 import { Button } from "../../shared/ui/Button"
 import { requiredValidateMinLength } from "../../components/input-validate"
 import { useNavigate } from "@tanstack/react-router"
-import { apiService } from "../../services/ApiService"
+import { apiService } from "../../services/api/ApiService"
 import { useAuth } from "../../features/auth"
 import { flushSync } from "react-dom"
 
@@ -36,9 +36,7 @@ export const Login:FC = function Login(){
         })
 
         if(response.data){
-            flushSync(() => {
-                setToken(response.data)
-            })
+            setToken(response.data)
             navigate({to:"/"})
         }
     })}>

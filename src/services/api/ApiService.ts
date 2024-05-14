@@ -10,7 +10,8 @@ interface RequestResponse<T> extends Pick<Response,"status">{
 type RequestMethod = "GET" | "POST" | "UPDATE" | "DELETE"
 
 class ApiService{
-    baseUrl: string = "https://trello-server-cec1f6a5a5da.herokuapp.com"
+    baseUrl: string = "https://test-project-etzd81wcc-ilyas-projects-9972b82d.vercel.app"
+    bearerToken: Record<string,string> = {}
 
     private _checkNewUrl(url:string){
         if(url.includes("http://") || url.includes("https://")){
@@ -37,7 +38,8 @@ class ApiService{
             body: JSON.stringify(options.dto),
             headers:{
                 "Content-Type": "application/json",
-               ...options.headers
+                ...this.bearerToken,
+                ...options.headers
             }
         })
         .then(this._status)
@@ -58,6 +60,12 @@ class ApiService{
         return this._serverRequest<T>(options, "POST")
     }
 
+    saveBearerToken(token:string){
+        this.bearerToken = {Authorization: `Bearer ${token}`}
+    }
+    deleteBearerToken(){
+        this.bearerToken = {}
+    }
 }
 
 export const apiService = new ApiService()

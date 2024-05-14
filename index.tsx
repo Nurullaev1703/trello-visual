@@ -1,12 +1,7 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import "./src/app/styles/index.css"
-import { RouterProvider, createRouter } from '@tanstack/react-router'
-import { routeTree } from './src/routeTree.gen'
-import { Init } from './src/ini/Init'
-
-export const router = createRouter({routeTree})
+import { InitializeApp } from './src/ini/InitializeApp'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-    <Init />
+    <InitializeApp />
 )

@@ -10,7 +10,7 @@ interface RequestResponse<T> extends Pick<Response,"status">{
 type RequestMethod = "GET" | "POST" | "UPDATE" | "DELETE"
 
 class ApiService{
-    baseUrl: string = "https://test-project-etzd81wcc-ilyas-projects-9972b82d.vercel.app"
+    baseUrl: string = "http://localhost:3000"
     bearerToken: Record<string,string> = {}
 
     private _checkNewUrl(url:string){

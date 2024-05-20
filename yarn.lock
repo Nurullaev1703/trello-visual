@@ -675,6 +675,13 @@
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.15.14.tgz#f7c57b261904831877220182303761c012d05046"
   integrity sha512-on75VMd0XqZfaQW+9pGjSNiqW+ghc5E2ZSLRBXwcXl/C4YzjfyjrLPhrEpKnR9Uym9KXBvxrhoHfPcczYHweyA==
 
+"@mui/icons-material@^5.15.18":
+  version "5.15.18"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.18.tgz#51e42958ed671589f7a1af19b59372df884bcd61"
+  integrity sha512-jGhyw02TSLM0NgW+MDQRLLRUD/K4eN9rlK2pTBTL1OtzyZmQ8nB060zK1wA0b7cVrIiG+zyrRmNAvGWXwm2N9Q==
+  dependencies:
+    "@babel/runtime" "^7.23.9"
+
 "@mui/material@^5.15.12":
   version "5.15.14"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.15.14.tgz#a40bd5eccfa9fc925535e1f4d70c6cef77fa3a75"
@@ -851,6 +858,18 @@
   version "1.26.3"
   resolved "https://registry.yarnpkg.com/@tanstack/history/-/history-1.26.3.tgz#bc53893a68304eca5dabdd4dba40c8d21b84fe1f"
   integrity sha512-NhRgiyTdNy7lw2iL1gggj6Znz5wWi8c2yFE1zCfn0G6CPRDZZ//Stgd7bPOs6XIp24YeCFrIq4J3HAhbo8jyZg==
+
+"@tanstack/query-core@5.36.1":
+  version "5.36.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.36.1.tgz#ae46f935c4752812a56c6815305061a3da82e7b8"
+  integrity sha512-BteWYEPUcucEu3NBcDAgKuI4U25R9aPrHSP6YSf2NvaD2pSlIQTdqOfLRsxH9WdRYg7k0Uom35Uacb6nvbIMJg==
+
+"@tanstack/react-query@^5.36.2":
+  version "5.36.2"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.36.2.tgz#1b7dc4c2fa0e48912335f0a157dd942cfa269326"
+  integrity sha512-bHNa+5dead+j6SA8WVlEOPxcGfteVFgdyFTCFcxBgjnPf0fFpHUc7aNZBCnvmPXqy/BeQa9zTuU9ectb7i8ZXA==
+  dependencies:
+    "@tanstack/query-core" "5.36.1"
 
 "@tanstack/react-router-devtools@^0.0.1-alpha.1":
   version "0.0.1-alpha.1"
@@ -2464,6 +2483,7 @@ source-map@^0.5.7:
   integrity sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==

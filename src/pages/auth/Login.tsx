@@ -7,7 +7,6 @@ import { requiredValidateMinLength } from "../../components/input-validate"
 import { useNavigate } from "@tanstack/react-router"
 import { apiService } from "../../services/api/ApiService"
 import { useAuth } from "../../features/auth"
-import { flushSync } from "react-dom"
 
 interface FormType{
     username:string,
